@@ -17,7 +17,7 @@ public class Menu {
 			String opcao = JOptionPane.showInputDialog("1: Cadastrar Clientes \n 2: Cadastrar Usuarios \n 3: Cadastrar produtos");
 			
 			if (opcao.equals("1")){
-				String nome = JOptionPane.showInputDialog("Se você for Pessoa Física digite 1 se for Empresa digite 2 ?");
+				String nome = JOptionPane.showInputDialog("Se vocÃª for Pessoa FÃ­sica digite 1 se for Empresa digite 2 ?");
 				if (nome.equals("1")){
 					JOptionPane.showInputDialog("Digite seu nome :");
 					JOptionPane.showInputDialog("Digite seu CPF :");
@@ -41,9 +41,12 @@ public class Menu {
 			else if (opcao.equals("3")){
 					JOptionPane.showInputDialog("Digite o codigo do produto :");
 					JOptionPane.showInputDialog("Digite o nome do produto :");
-					JOptionPane.showInputDialog("Digite o preço de atacado :");
-					JOptionPane.showInputDialog("Digite o preço de varejo :");
+					JOptionPane.showInputDialog("Digite o preÃ§o de atacado :");
+					JOptionPane.showInputDialog("Digite o preÃ§o de varejo :");
 					sisMercadoSi.cadastrarProduto(produto);
+	}
+			else if (opcao.equals("4")){
+				acabou = true;
 	}
 	
 }
